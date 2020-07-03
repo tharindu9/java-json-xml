@@ -14,9 +14,12 @@ In a maven project, We can add the dependency as follow :
 Simple Java object convert to JSON Example
 
 ``` java
-ObjectMapper objectMapper = new ObjectMapper();
 public class Employee {
-
+    
+    Employee(String name,int age){
+    setName(name);
+    setAge(age);
+    }
     String name;
     int age;
      public String getName() {
@@ -35,4 +38,7 @@ public class Employee {
         this.age = age;
     }
  }
+ //In Main class main method
+ObjectMapper objectMapper = new ObjectMapper();
+ objectMapper.writeValue(new File("target/employee.json"), emp);
 ```
