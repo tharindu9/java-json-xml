@@ -4,19 +4,10 @@ In a maven project, We can add the dependency as follow :
 <br>
 ``` xml
  <dependencies>
- <br>
-        <dependency>
-         <br>
-            <groupId>com.fasterxml.jackson.core</groupId>
-         <br>
-            <artifactId>jackson-databind</artifactId>
-         <br>
-            <version>2.5.3</version>
-         <br>
-        </dependency>
- <br>
-    </dependencies>
-    <br>
-    <br>
-    
+    <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>        
+         <version>2.5.3</version>         
+     </dependency>
+  </dependencies>         
    ```
