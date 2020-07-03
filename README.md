@@ -40,5 +40,5 @@ public class Employee {
  }
  //In Main class main method
 ObjectMapper objectMapper = new ObjectMapper();
- objectMapper.writeValue(new File("target/employee.json"), emp);
+objectMapper.writeValue(new File("target/employee.json"), emp);
 ```
