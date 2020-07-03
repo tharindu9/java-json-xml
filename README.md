@@ -11,3 +11,28 @@ In a maven project, We can add the dependency as follow :
      </dependency>
   </dependencies>         
    ```
+Simple Java object convert to JSON Example
+
+``` java
+ObjectMapper objectMapper = new ObjectMapper();
+public class Employee {
+
+    String name;
+    int age;
+     public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+ }
+```
