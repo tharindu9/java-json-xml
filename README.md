@@ -45,3 +45,14 @@ objectMapper.writeValue(new File("target/employee.json"), emp);
 //{"name":"Tharindu","age":"25"}
 ```
 **JSON to Java**
+Let's see simple JSON Java converting exampel.
+
+Simple JSON String:
+String json = "{ \"name\" : \"Tharindu\", \"age\" : \"25\" }";
+Employee emp = objectMapper.readValue(json, Employee.class);  
+
+When JSON file in file system:
+Employee emp = objectMapper.readValue(new File("path_to/json_emp.json"), Employee.class);
+
+ As a URL:
+Employee emp = objectMapper.readValue(new URL("file:src/test/resources/json_emp.json"), Employee.class);
